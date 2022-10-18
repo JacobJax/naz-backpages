@@ -1,0 +1,32 @@
+{
+  "name": "storms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "nodemon --exec tsc-node src/server.ts",
+    "build": "tcs -p .",
+    "test": "jest",
+    "test:w": "jest -w",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/jest": "^29.2.0",
+    "@types/node": "^18.11.0",
+    "@types/supertest": "^2.0.12",
+    "jest": "^29.2.0",
+    "nodemon": "^2.0.20",
+    "supertest": "^6.3.0",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}
