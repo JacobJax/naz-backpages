@@ -6,9 +6,10 @@ interface requestObject {
 }
 
 // validate registration data
-const registerValidation = (data: requestObject) => {
+export function registerValidation(data: requestObject){
    const schema = Joi.object({
       username: Joi.string()
+         .alphanumeric()
          .required()
          .min(3)
          .max(22),
@@ -21,5 +22,3 @@ const registerValidation = (data: requestObject) => {
    // return Joi.validate(data, schema)
    return schema.validate(data)
 }
-
-module.exports.registerValidation = registerValidation
