@@ -1,9 +1,6 @@
 import request from 'supertest'
 import {initializeApp} from '../src/app'
-
 const app = initializeApp()
-
-const {MongoClient} = require('mongodb')
 
 describe("It tests auth route", () => {
    describe("It tests /register route", () => {
